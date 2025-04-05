@@ -1,7 +1,7 @@
 # ITC-OnlineShopping
 
 # TODO
-- [ ] Login
+- [x] Login
 - [ ] Homepage
 - [ ] Product Info
 - [ ] Category Page
