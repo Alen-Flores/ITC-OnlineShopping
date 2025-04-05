@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.background {
+  display: flex;
+  background-image: url('../Media/wallpaper4.png');
+  image-rendering: pixelated;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  filter: blur(5px);
+  z-index: -1;
+  overflow: hidden;
+}
+
+
+.entire {
+  width: 420px;
+  background: #54652e28;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  border: #333 solid 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.entire h1 {
+  font-size: 36px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.entire .input-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  margin: 30px 0;
+  position: relative;
+
+}
+
+.input-container input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+  font-size: 15px;
+}
+
+.input-container input::placeholder {
+  color: #fff;
+}
+
+.input-container i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.entire .remember-me {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 16px;
+}
+
+.remember-me label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-me a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-me a:hover {
+  text-decoration: underline;
+}
+
+.entire .button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.entire .register {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .entire {
+    width: 90%;
+  }
+
+  .entire h1 {
+    font-size: 30px;
+  }
+
+  .input-container input {
+    font-size: 16px;
+  }
+
+  .input-container i {
+    font-size: 18px;
+  }
+
+  .entire .button {
+    font-size: 16px;
+  }
+}
