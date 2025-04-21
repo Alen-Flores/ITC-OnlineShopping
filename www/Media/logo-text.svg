@@ -3,50 +3,106 @@
 
 <svg
    width="141.30969mm"
-   height="49.786644mm"
-   viewBox="0 0 141.30969 49.786644"
+   height="49.786636mm"
+   viewBox="0 0 141.30969 49.786636"
    version="1.1"
    id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1">
+    <linearGradient
+       id="swatch8">
+      <stop
+         style="stop-color:#667b79;stop-opacity:1;"
+         offset="0"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="swatch1"
+       gradientTransform="scale(0.26458333)">
+      <stop
+         style="stop-color:#54652e;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+    </linearGradient>
     <rect
        x="424.85193"
        y="85.619301"
        width="530.05511"
        height="232.12878"
        id="rect36" />
+    <linearGradient
+       xlink:href="#swatch1"
+       id="linearGradient4"
+       x1="76.776199"
+       y1="184.64995"
+       x2="87.912987"
+       y2="184.64995"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#swatch1"
+       id="linearGradient5"
+       x1="43.899139"
+       y1="164.25117"
+       x2="96.071152"
+       y2="164.25117"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#swatch1"
+       id="linearGradient6"
+       x1="52.057812"
+       y1="184.65021"
+       x2="63.19408"
+       y2="184.65021"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#swatch8"
+       id="linearGradient8"
+       x1="52.282089"
+       y1="180.5538"
+       x2="87.688713"
+       y2="180.5538"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#swatch1"
+       id="linearGradient11"
+       gradientUnits="userSpaceOnUse"
+       x1="430.61157"
+       y1="136.76096"
+       x2="650.64368"
+       y2="136.76096" />
   </defs>
   <g
      id="layer1"
-     transform="translate(-34.345154,-144.61698)">
+     transform="translate(-12.982683,-97.882151)">
     <g
        id="g1"
-       transform="translate(-9.553985,-3.7690355)">
+       transform="translate(-30.916457,-50.503855)">
       <text
          xml:space="preserve"
          transform="matrix(0.4119797,0,0,0.4119797,-82.843155,126.99863)"
          id="text32"
-         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:96px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect36);display:inline;fill:#b00b50;fill-opacity:1;stroke:none;stroke-width:75.5906;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:96px;font-family:'JetBrainsMono Nerd Font';-inkscape-font-specification:'JetBrainsMono Nerd Font, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect36);display:inline;fill:url(#linearGradient11);fill-opacity:1;stroke:none;stroke-width:75.5906;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><tspan
            x="424.85156"
            y="171.80096"
            id="tspan2">ONAD</tspan></text>
       <path
          id="path61"
-         style="fill:#604e4d;fill-opacity:1"
+         style="fill:url(#linearGradient8);fill-opacity:1"
          d="m 87.68871,171.28436 -10.91251,7.64345 v 6.13864 l 10.91251,-7.64346 z m -13.77177,9.64643 -3.93154,2.75383 -3.93154,-2.75383 v 6.13864 l 3.93154,2.75384 3.93154,-2.75384 z m -10.72286,-2.00298 -10.91199,-7.64294 v 6.13812 l 10.91199,7.64346 z" />
       <path
          id="path62"
-         style="fill:#b00b50"
+         style="fill:url(#linearGradient4)"
          d="m 87.91299,171.12726 -11.13679,7.80055 v 19.24482 h 11.13679 z" />
       <path
          id="path63"
-         style="fill:#b00b50"
+         style="fill:url(#linearGradient6)"
          d="m 63.19408,178.92781 -11.13627,-7.80003 v 27.04485 h 11.13627 z" />
       <path
          id="path64"
-         style="fill:#b00b50"
+         style="fill:url(#linearGradient5)"
          d="M 96.07115,148.386 69.9854,166.65931 43.89914,148.386 v 13.45862 l 26.08626,18.27175 26.08575,-18.27175 z" />
     </g>
   </g>
