@@ -15,7 +15,7 @@
     <linearGradient
        id="swatch8">
       <stop
-         style="stop-color:#667b79;stop-opacity:1;"
+         style="stop-color:#54652e;stop-opacity:1;"
          offset="0"
          id="stop8" />
     </linearGradient>
@@ -23,7 +23,7 @@
        id="swatch1"
        gradientTransform="scale(0.26458333)">
       <stop
-         style="stop-color:#1f8248;stop-opacity:1;"
+         style="stop-color:#30cc50;stop-opacity:1;"
          offset="0"
          id="stop1" />
     </linearGradient>
@@ -58,10 +58,10 @@
   </defs>
   <g
      id="layer1"
-     transform="translate(-14.239604,-11.157168)">
+     transform="translate(-23.300979,-15.954366)">
     <g
        id="g13"
-       transform="translate(-53.277014,-23.985995)">
+       transform="translate(-44.215638,-19.188796)">
       <path
          id="path53"
          style="fill:url(#linearGradient9);fill-opacity:1;stroke-width:1.50576"
