@@ -4,10 +4,22 @@
   --green: #1F8248;
   --dark-green: #54652E;
   --gray: #445E5C;
-  --black: #222519;
+  --dark-gray: #222519;
+  --black: #10130E;
   --white: #FDFFFC;
 
   /* ===== Project color definitions ===== */
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background-color: var(--black);
+  margin: 0;
+  padding: 0;
 }
 
 .material-input-container {
@@ -81,4 +93,102 @@
 
 .material-toggle--active:hover {
   opacity: 0.6;
+}
+
+.navbar {
+  background-color: black;
+  top: 0;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  z-index: 99;
+}
+
+.navbar-logo {
+  width: 2em;
+  height: 2em;
+  margin: 0.1em;
+  cursor: pointer;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: var(--white);
+  padding: 1em 0.5em;
+  border: solid transparent;
+  border-width: 0 0 3px 0;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+
+.navbar-link:hover {
+  border-color: var(--light-green);
+  opacity: 1;
+}
+
+
+.navbar-dropdown {
+  position: absolute;
+  top: 100%;
+  background-color: var(--black);
+  box-shadow: 0 2px 5px black;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 10em;
+  text-align: center;
+  display: flex;
+
+  padding: 0 1em;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-caret {
+  transition: rotate 0.2s ease-in-out;
+  rotate: 0deg;
+}
+
+.navbar-link:hover .navbar-caret {
+  rotate: 180deg;
+}
+
+.navbar-link:hover .navbar-dropdown {
+  padding: 1em;
+  max-height: 10em;
+}
+
+.button {
+  background-color: var(--light-green);
+  color: var(--white);
+  padding: 0.3em;
+  font-size: 0.9em;
+  border-radius: 16px;
+  border: solid 2px var(--light-green);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  filter: brightness(100%);
+}
+
+.button:active {
+  filter: brightness(50%);
+}
+
+.button:hover {
+  color: var(--light-green);
+  background-color: var(--white);
+}
+
+.dropdown-signup-button {
+  background-color: transparent;
+  color: var(--white);
+}
+
+.dropdown-signup-button:hover {
+  background-color: transparent;
 }

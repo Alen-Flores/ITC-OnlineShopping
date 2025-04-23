@@ -4,16 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link href="css/style.css" rel="stylesheet">
+  <title>Monad | Homepage</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/homepage.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./Media/logo.svg">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
   <div class="navbar">
-    <a href="#">store</a>
-    <a href="#">categories</a>
-    <a href="#">search</a>
-    <a href="#">login</a>
+    <a href="homepage.html">
+      <img class="navbar-logo" src="./Media/logo.svg" alt="">
+    </a>
+    <a class="navbar-link" href="#">Store</a>
+    <a class="navbar-link" href="#">Categories</a>
+    <a class="navbar-link" href="#">Search</a>
+    <span class="navbar-link" href="login.html">
+      <i class='bx bxs-user'></i>
+      Login
+      <i class='bx bx-caret-down navbar-caret'></i>
+      <div class="navbar-dropdown">
+        My Account
+        <button class="button" href="login.html">
+          Login
+        </button>
+        <button class="button dropdown-signup-button" href="login.html">
+          Sign Up
+        </button>
+
+      </div>
+    </span>
+    <span class="navbar-link">
+      <i class='bx bx-cart'></i>
+      Cart
+      <i class='bx bx-caret-down navbar-caret'></i>
+      <div class="navbar-dropdown">
+
+      </div>
+    </span>
   </div>
 
 </body>
