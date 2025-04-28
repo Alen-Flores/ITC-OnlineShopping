@@ -18,32 +18,75 @@
     </a>
     <a class="navbar-link" href="#">Store</a>
     <a class="navbar-link" href="#">Categories</a>
-    <a class="navbar-link" href="#">Search</a>
-    <span class="navbar-link" href="login.html">
-      <i class='bx bxs-user'></i>
-      Login
-      <i class='bx bx-caret-down navbar-caret'></i>
-      <div class="navbar-dropdown">
-        My Account
-        <button class="button" href="login.html">
-          Login
-        </button>
-        <button class="button dropdown-signup-button" href="login.html">
-          Sign Up
+    <a class=" navbar-search navbar-link dropdown-toggle" href="#">
+      <div class="navbar-search-bar">
+        <input class="navbar-search-input" type="" name="" value="">
+
+        <button class="button navbar-search-button">
+          <i class='bx bx-search navbar-search-bar-icon'></i>
         </button>
 
+        <div class="dropdown navbar-search-dropdown">
+          SAMPLE
+        </div>
+      </div>
+    </a>
+    <span class="navbar-link dropdown-toggle">
+      🇺🇸 EN | $USD
+      <i class='bx bx-caret-down caret'></i>
+      <div class="dropdown navbar-language-dropdown">
+        Change language
+        <div class="radio-options">
+          <form>
+            <input id="en" class="radio" type="radio" name="language" value="EN">
+            <label for="en"> English </label>
+            <br>
+            <input id="es" type="radio" name="language" value="ES">
+            <label for="es"> Espaňol </label>
+            <br>
+          </form>
+        </div>
+        <hr>
+        Change currency <br>
+        <select>
+          <option value="usd">
+            $ - USD - US Dollar
+          </option>
+          <option value="usd2"> $ - USD - US Dollar </option>
+          <option value="usd3"> $ - USD - US Dollar </option>
+          <option value="usd4"> $ - USD - US Dollar </option>
+          <option value="usd5"> $ - USD - US Dollar </option>
+          <option value="usd6"> $ - USD - US Dollar </option>
+          <option value="usd7"> $ - USD - US Dollar </option>
+        </select>
       </div>
     </span>
-    <span class="navbar-link">
-      <i class='bx bx-cart'></i>
+    <span class="navbar-link dropdown-toggle" href="login.html">
+      <i class='bx bxs-user'></i>
+      Login
+      <i class='bx bx-caret-down navbar-caret caret'></i>
+      <div class="dropdown">
+        My Account
+        <a class="button" href="login.html">
+          Login
+        </a>
+        <a class="button dropdown-signup-button" href="login.html">
+          Sign Up
+        </a>
+      </div>
+    </span>
+    <span class="navbar-link dropdown-toggle">
+      <span class="cart-icon">
+        <i class='bx bx-cart'></i>
+        <span class="item-counter">0</span>
+      </span>
       Cart
-      <i class='bx bx-caret-down navbar-caret'></i>
-      <div class="navbar-dropdown">
-
+      <i class='bx bx-caret-down navbar-caret caret'></i>
+      <div class="dropdown">
+        SAMPLE
       </div>
     </span>
   </div>
-
 </body>
 
 </html>

@@ -19,12 +19,10 @@
     <a class="navbar-link" href="#">Store</a>
     <a class="navbar-link" href="#">Categories</a>
     <a class="navbar-link" href="#">Search</a>
-    <a class="navbar-link" href="#">Login</a>
   </div>
   <div class="background"></div>
   <div class="entire">
     <img class="logo" src="./Media/logo-text.svg" alt="">
-    <h1>Login</h1>
     <form action="login.php" method="post" class="login-form">
       <form>
         <div class="material-input-container">
@@ -35,7 +33,7 @@
           <input class="material-input" type="password" id="password-input" name="password" placeholder="" value=""
             required>
           <label class="material-label" for="password">Password</label>
-          <i class='bx bxs-low-vision material-toggle' id="password-toggle"></i>
+          <i class='bx bxs-low-vision material-visibility-toggle' id="password-toggle"></i>
         </div>
       </form>
       <div class="remember-me">
@@ -52,7 +50,7 @@
   <script>
     const password_toggle = document.getElementById("password-toggle");
     password_toggle.addEventListener("click", function () {
-      password_toggle.classList.toggle("material-toggle--active");
+      password_toggle.classList.toggle("material-visibility-toggle--active");
       const password = document.getElementById("password-input");
       password.type = password.type === "password" ? "text" : "password";
     })

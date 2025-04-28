@@ -8,6 +8,16 @@
   --black: #10130E;
   --white: #FDFFFC;
 
+
+  --light-green-rgb: 48, 204, 80;
+  --green-rgb: 31, 130, 72;
+  --dark-green-rgb: 84, 101, 46;
+  --light-gray-rgb: 206, 208, 206;
+  --gray-rgb: 68, 94, 92;
+  --dark-gray-rgb: 34, 37, 25;
+  --black-rgb: 16, 19, 14;
+  --white-rgb: 253, 255, 252;
+
   /* ===== Project color definitions ===== */
 }
 
@@ -21,6 +31,113 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.button {
+  background-color: var(--light-green);
+  color: var(--white);
+  padding: 0.3em;
+  font-size: 0.9em;
+  border-radius: 16px;
+  border: solid 2px var(--light-green);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  filter: brightness(100%);
+  text-decoration: none;
+}
+
+.button:hover {
+  filter: brightness(130%);
+}
+
+.button:active {
+  filter: brightness(50%);
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--gray);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+
+  display: inline-flex;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.7em;
+  height: 0.7em;
+  margin: auto;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 100ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--light-green);
+}
+
+input[type="radio"]:hover::before {
+  transform: scale(0.5);
+}
+
+input[type="radio"]:active::before {
+  transform: scale(0.9);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background-color: var(--gray);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+
+  transform: translateY(0.1em);
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  border: solid 1px rgba(var(--white-rgb), 0.3);
+  display: block;
+  border-radius: 0.2em;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0em;
+  background-image: url('../Media/check.svg');
+  background-color: var(--gray);
+
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+  background-color: var(--light-green);
+  background-size: 100%;
+}
+
+select {
+  background-color: var(--gray);
+  border: none;
+  padding: 0.2em 1em;
+  border-bottom: solid 3px var(--light-green);
+  border-radius: 0.5em;
+  color: var(--white);
+}
+
+/* Usage: 
+ * <div class="material-input-container">
+ *    <input class="material-input">
+ *    <label class="material-label"></label>
+ * </div>
+*/
 
 .material-input-container {
   width: 100%;
@@ -72,7 +189,7 @@ body {
   backdrop-filter: blur(6px);
 }
 
-.material-toggle {
+.material-visibility-toggle {
   position: absolute;
   right: 20px;
   top: 50%;
@@ -83,16 +200,66 @@ body {
   transition: opacity 0.1s ease-in-out;
 }
 
-.material-toggle:hover {
+.material-visibility-toggle:hover {
   opacity: 1;
 }
 
-.material-toggle--active {
+.material-visibility-toggle--active {
   opacity: 0.4;
 }
 
-.material-toggle--active:hover {
+.material-visibility-toggle--active:hover {
   opacity: 0.6;
+}
+
+/* Usage: 
+ * <div class="dropdown-toggle">
+ *  {Label}
+ *  <i class="caret"></i>
+ *  <div class="dropdown">
+ *    {Dropdown Contents}
+ *  </div>
+ * </div>
+ */
+
+.dropdown {
+  font-size: 0.9em;
+  position: absolute;
+  top: 100%;
+  box-shadow: 0 2px 5px black;
+  min-width: 10em;
+  padding: 0 1em;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown hr {
+  color: var(--dark-gray);
+  width: 100%;
+}
+
+.caret {
+  transition: rotate 0.2s ease-in-out;
+  rotate: 0deg;
+}
+
+.dropdown-toggle:hover .caret {
+  rotate: 180deg;
+}
+
+.dropdown-toggle:hover .dropdown {
+  padding: 1em;
+  max-height: 20em;
+}
+
+.dropdown-signup-button {
+  background-color: transparent;
+  color: var(--white);
+}
+
+.dropdown-signup-button:hover {
+  background-color: transparent;
 }
 
 .navbar {
@@ -130,65 +297,76 @@ body {
   opacity: 1;
 }
 
-
-.navbar-dropdown {
-  position: absolute;
-  top: 100%;
+.navbar-link .dropdown {
   background-color: var(--black);
-  box-shadow: 0 2px 5px black;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  min-width: 10em;
   text-align: center;
+}
+
+.navbar-search {
   display: flex;
-
-  padding: 0 1em;
-  max-height: 0;
-  overflow-y: hidden;
-  transition: all 0.2s ease-in-out;
 }
 
-.navbar-caret {
-  transition: rotate 0.2s ease-in-out;
-  rotate: 0deg;
-}
-
-.navbar-link:hover .navbar-caret {
-  rotate: 180deg;
-}
-
-.navbar-link:hover .navbar-dropdown {
-  padding: 1em;
-  max-height: 10em;
-}
-
-.button {
-  background-color: var(--light-green);
+.navbar-search-input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 90%;
   color: var(--white);
-  padding: 0.3em;
-  font-size: 0.9em;
+  margin-left: 0.4em;
+}
+
+.navbar-search-bar {
+  background-color: var(--gray);
   border-radius: 16px;
-  border: solid 2px var(--light-green);
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  filter: brightness(100%);
+  display: flex;
+  justify-items: end;
+  min-width: 50ch;
 }
 
-.button:active {
-  filter: brightness(50%);
+.navbar-search-button {
+  align-self: end;
+  border-radius: 0 16px 16px 0;
+  padding: 0.5em;
+  padding-right: 1em;
+  border: none;
 }
 
-.button:hover {
-  color: var(--light-green);
-  background-color: var(--white);
+.navbar-search-dropdown {
+  position: absolute;
+  width: 100vw;
+  height: 200vh;
+  left: 0;
 }
 
-.dropdown-signup-button {
-  background-color: transparent;
-  color: var(--white);
+.navbar-language-dropdown {
+  display: flex;
+  flex-direction: column;
 }
 
-.dropdown-signup-button:hover {
-  background-color: transparent;
+.radio-options {
+  text-align: left;
+}
+
+.radio-options input {
+  margin-bottom: 0.5em;
+}
+
+.cart-icon {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.7em;
+}
+
+.item-counter {
+  position: absolute;
+  left: 0.7em;
+  top: 0.7em;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0 0.4em;
+  border-radius: 100%;
+  background-color: var(--green);
 }
